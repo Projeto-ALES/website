@@ -1,0 +1,43 @@
+@import "~styles/breakpoints";
+
+.card {
+  padding: var(--spacing-base) var(--spacing-medium);
+  background-color: #fff;
+  box-shadow: var(--medium-drop-shadow);
+  border-radius: var(--large-radius);
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.yellow {
+  background-color:	#f9a620 ;
+  color: var(--gray-dark);
+}
+
+.blue-dark {
+  background-color: var(--brand-blue-dark);
+  color: #fff;
+}
+
+
+.outline {
+  border: 1px solid var(--gray-light);
+}
+
+.outline-blue {
+  background-color: #fff;
+  border: 1px solid var(--brand-blue-dark);
+}
+
+.outline-blue-brand {
+  background-color: #fff;
+  border: 1px solid var(--brand-blue);
+}
+
+.outline-yellow {
+  background-color: #fff;
+
+  &:hover {
+    border: 1px solid var(--brand-yellow);
+  }
+}

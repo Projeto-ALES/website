@@ -1,0 +1,82 @@
+@import "~styles/breakpoints";
+
+.container {
+  color: var(--gray-dark);
+  margin: auto;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .left,
+    .right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include desktop {
+        width: 40%;
+        margin: 0 var(--spacing-huge);
+      }
+
+      .section {
+        width: 100%;
+        margin: var(--spacing-base) 0;
+        max-width: 400px;
+        text-align: center;
+
+        .professorsDescription {
+          margin-bottom: var(--spacing-huge);
+          color: var(--gray-dark);
+
+          .chip {
+            display: flex;
+            justify-content: center;
+          }
+        }
+
+        .dropdown {
+          max-width: 300px;
+          margin: var(--spacing-base) auto;
+        }
+
+        .selectedProfessors {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin: var(--spacing-huge) 0;
+        }
+
+        .coordinatorLabel {
+          font-weight: 600;
+        }
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        margin: var(--spacing-huge) 0;
+
+        @include desktop {
+          justify-content: flex-start;
+        }
+
+        button {
+          &:first-of-type {
+            margin-right: var(--spacing-huge);
+          }
+          &:last-of-type {
+            width: 160px;
+          }
+        }
+      }
+    }
+  }
+}

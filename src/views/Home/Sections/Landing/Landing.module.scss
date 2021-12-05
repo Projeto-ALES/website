@@ -1,0 +1,81 @@
+@import "~styles/breakpoints";
+
+.landing {
+  background: var(--brand-blue);
+  background-image: linear-gradient(rgba(2, 27, 61, 0.75), rgba(2, 27, 61, 0.75)),
+    url("../../../../assets/img/ales-hackathon.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 65vh;
+
+  @include tablet-landscape {
+    height: 70vh;
+  }
+
+  @include tablet-portrait{
+    height: 60vh;
+  }
+
+  @include smartphone {
+    height: 60vh;
+  }
+
+  .landingContainer {
+    padding-top: var(--spacing-huge);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h1,
+    h3 {
+      color: #fff;
+      font-weight: 600;
+      @include smartphone {
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    @include tablet-portrait {
+      h1 {
+        font-size: var(--font-huge);
+      }
+
+      h3 {
+        font-size: var(--font-large);
+      }
+    }
+
+    @include tablet-landscape {
+      h1 {
+        font-size: var(--font-very-huge);
+      }
+
+      h3 {
+        font-size: var(--font-very-large);
+      }
+    }
+
+    .buttonsContainer {
+      display: flex;
+      flex-direction: column;
+
+      @include tablet-portrait {
+        flex-direction: row;
+      }
+
+      button {
+        margin-top: var(--spacing-large);
+
+        @include tablet-portrait {
+          &:first-of-type {
+            margin-right: var(--spacing-huge);
+          }
+        }
+      }
+    }
+  }
+}

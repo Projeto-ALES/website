@@ -1,0 +1,26 @@
+@import "~styles/breakpoints";
+
+.container {
+  @include tablet-landscape {
+    padding: 0 5%;
+  }
+  @include desktop {
+    padding: 0 12%;
+  }
+
+  &__table {
+    margin-bottom: var(--spacing-huge);
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: var(--spacing-huge);
+
+    button {
+      &:last-of-type {
+        margin-left: var(--spacing-large);
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "~styles/breakpoints";
+
+.container {
+  @include desktop {
+    margin-left: var(--sidebar-width);
+  }
+
+  .line {
+    height: 1.5px;
+    margin: 0 5em;
+    background-color: var(--gray-light);
+
+    @include desktop {
+      margin: 2em 15em;
+    }
+  }
+}

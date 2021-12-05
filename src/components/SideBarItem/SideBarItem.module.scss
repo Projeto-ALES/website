@@ -1,0 +1,40 @@
+@import "~styles/breakpoints";
+
+.container {
+  width: 25%;
+
+  @include desktop {
+    width: auto;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--sidebar-item-height);
+    border-radius: var(--medium-radius);
+    transition: 0.2s ease;
+    margin: var(--spacing-small);
+
+      color: var(--gray-lighter);
+      height: var(--sidebar-item-height-desktop);
+      justify-content: space-around;
+
+    &:hover {
+      background-color: var(--gray-darkest);
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__isOpen {
+      @include desktop {
+        display: block;
+        width: 50%;
+        font-size: var(--font-medium);
+        font-weight: 600;
+      }
+    }
+  }
+}

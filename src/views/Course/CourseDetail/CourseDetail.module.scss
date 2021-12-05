@@ -1,0 +1,173 @@
+@import "~styles/breakpoints";
+
+.modal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__buttons {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+
+    @include tablet-portrait {
+      width: 500px;
+      padding: var(--spacing-base);
+    }
+  }
+}
+
+.description {
+  text-align: center;
+  color: var(--gray-dark);
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--gray-dark);
+
+  &__top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: var(--spacing-large) 0;
+
+    @include tablet-portrait {
+      align-items: center;
+    }
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    span {
+      font-size: 18px;
+    }
+
+    .period {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      @include tablet-portrait {
+        width: 50%;
+        justify-content: space-evenly;
+      }
+    }
+
+    .professors {
+      margin-top: var(--spacing-large);
+
+      @include desktop {
+        margin-top: 0;
+      }
+
+      &__chips {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--spacing-large) 0;
+    width: 100%;
+
+    .lessons {
+      text-align: center;
+      width: 100%;
+
+      &__add {
+        margin: auto;
+        width: fit-content;
+        margin: var(--spacing-large) auto;
+      }
+
+      @include tablet-portrait {
+        max-width: 400px;
+      }
+
+      .lesson {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: var(--spacing-large) var(--spacing-base);
+
+        &__description {
+          margin-bottom: var(--spacing-medium);
+        }
+
+        &__date {
+          display: flex;
+          align-items: center;
+          margin-bottom: var(--spacing-medium);
+
+          span {
+            &:first-of-type {
+              margin-right: var(--spacing-base);
+            }
+          }
+        }
+
+        &__allocated {
+          display: flex;
+          align-items: center;
+
+          .chips {
+            display: flex;
+            justify-content: center;
+            margin-left: var(--spacing-small);
+            flex-wrap: wrap;
+          }
+        }
+
+        &__actions {
+          margin-top: var(--spacing-large);
+
+          .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include tablet-portrait {
+              flex-direction: row;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include tablet-portrait {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  button {
+    width: fit-content;
+    margin: var(--spacing-base);
+  }
+
+  .actions {
+    display: flex;
+  }
+}

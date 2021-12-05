@@ -1,0 +1,46 @@
+@import "~styles/breakpoints";
+
+@include desktop {
+  .overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: var(--sidebar-z-index);
+    transition: 200ms ease;
+  }
+}
+
+.container {
+  background-color:#021b3d;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  z-index: var(--sidebar-z-index);
+  box-shadow: var(--sidebar-shadow-mobile);
+
+  @include desktop {
+    width: var(--sidebar-width);
+    height: 100vh;
+    box-shadow: var(--sidebar-shadow-desktop);
+    transition: 300ms ease;
+
+    &:hover {
+      width: 250px;
+    }
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      margin-top: var(--spacing-medium);
+    }
+  }
+}
