@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.c6d6b60b.chunk.css",
+    "main.js": "/website/static/js/main.2d67aa0b.chunk.js",
+    "main.js.map": "/website/static/js/main.2d67aa0b.chunk.js.map",
+    "runtime-main.js": "/website/static/js/runtime-main.06ce3790.js",
+    "runtime-main.js.map": "/website/static/js/runtime-main.06ce3790.js.map",
+    "static/css/2.02385a5c.chunk.css": "/website/static/css/2.02385a5c.chunk.css",
+    "static/js/2.dfefec47.chunk.js": "/website/static/js/2.dfefec47.chunk.js",
+    "static/js/2.dfefec47.chunk.js.map": "/website/static/js/2.dfefec47.chunk.js.map",
+    "static/js/3.395c6bcd.chunk.js": "/website/static/js/3.395c6bcd.chunk.js",
+    "static/js/3.395c6bcd.chunk.js.map": "/website/static/js/3.395c6bcd.chunk.js.map",
+    "static/js/4.fdaf0fdd.chunk.js": "/website/static/js/4.fdaf0fdd.chunk.js",
+    "static/js/4.fdaf0fdd.chunk.js.map": "/website/static/js/4.fdaf0fdd.chunk.js.map",
+    "static/js/5.ea2558ba.chunk.js": "/website/static/js/5.ea2558ba.chunk.js",
+    "static/js/5.ea2558ba.chunk.js.map": "/website/static/js/5.ea2558ba.chunk.js.map",
+    "index.html": "/website/index.html",
+    "precache-manifest.a6136f6f9b6a682e47e56980a81747b1.js": "/website/precache-manifest.a6136f6f9b6a682e47e56980a81747b1.js",
+    "service-worker.js": "/website/service-worker.js",
+    "static/css/2.02385a5c.chunk.css.map": "/website/static/css/2.02385a5c.chunk.css.map",
+    "static/css/main.c6d6b60b.chunk.css.map": "/website/static/css/main.c6d6b60b.chunk.css.map",
+    "static/js/2.dfefec47.chunk.js.LICENSE.txt": "/website/static/js/2.dfefec47.chunk.js.LICENSE.txt",
+    "static/js/3.395c6bcd.chunk.js.LICENSE.txt": "/website/static/js/3.395c6bcd.chunk.js.LICENSE.txt",
+    "static/js/4.fdaf0fdd.chunk.js.LICENSE.txt": "/website/static/js/4.fdaf0fdd.chunk.js.LICENSE.txt",
+    "static/js/5.ea2558ba.chunk.js.LICENSE.txt": "/website/static/js/5.ea2558ba.chunk.js.LICENSE.txt",
+    "static/media/Landing.module.scss": "/website/static/media/ales-hackathon.5bf5a0ae.jpg",
+    "static/media/alessauro.svg": "/website/static/media/alessauro.018050b1.svg",
+    "static/media/Dropdown.module.scss": "/website/static/media/arrow-down.ed89135e.svg",
+    "static/media/index.css": "/website/static/media/logo.0e74e774.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.06ce3790.js",
+    "static/css/2.02385a5c.chunk.css",
+    "static/js/2.dfefec47.chunk.js",
+    "static/css/main.c6d6b60b.chunk.css",
+    "static/js/main.2d67aa0b.chunk.js"
+  ]
+}
